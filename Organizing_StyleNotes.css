@@ -1,0 +1,51 @@
+/*1. A space between selectors means: “Style an element, but only when it’s inside another.” 
+.card__wrapper .card {
+  background-color: white;
+}
+ 2. > Direct Children The greater-than symbol targets only direct children of an element. This styles links directly inside paragraphs, but not links nested deeper.
+It’s like saying: “Call the children next to you — not the grandchildren.”
+ p > a {
+  color: red;
+}
+  3. Multiple Selectors You can write multiple selectors together to target elements that meet several conditions.This means: “Find the link inside a heading that has both the ID main-title and the class note.”
+Like saying: “Find the person wearing a red shirt and a name badge — they need both.”
+#main-title.note > a {
+  text-decoration: underline;
+}
+
+BEM: BEM stands for Block, Element, Modifier.
+It gives structure to how you name your classes:
+Block: the main component (e.g. .card)
+Element: a piece inside that block (e.g. .card__title)
+Modifier: a variation or version (e.g. .card--dark)
+
+Without BEM:
+
+.blueButton2 { ... }
+.big-card-final { ... }
+
+With BEM:
+
+.card { ... }
+.card__button { ... }
+.card__button--large { ... }
+.card--dark { ... }
+__ connects elements to their block
+-- shows variations
+
+Translations
+transform: translateX(50px);   moves right 50px 
+transform: translateX(-50px);   moves left 50px 
+transform: translateY(50px);    moves down 50px 
+transform: translateY(-50px);   moves up 50px 
+
+Scaling 
+transform: scale(1.2);   120% — slightly bigger 
+transform: scale(0.5);   50% — smaller 
+
+Rotations
+transform: rotate(45deg);
+transform: rotate(-45deg);
+
+Combining
+transform: translateY(-20px) rotate(-10deg);

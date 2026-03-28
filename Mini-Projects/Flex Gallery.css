@@ -1,0 +1,58 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #a6a0ff;
+  color: rgb(0, 0, 0);
+}
+
+.navbar__logo {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.navbar__links {
+  display: flex;
+  gap: 60px;
+  color:  rgb(0, 0, 0);
+  font-size: 25px;
+}
+
+.navbar__links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar__links a:hover {
+  text-decoration: underline;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 40px;
+  background-color: #3802b8;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 250px;
+  text-align: center;
+  padding: 20px;
+  
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  
+}
+.card:hover {
+    transform: scale(1.05)
+}
